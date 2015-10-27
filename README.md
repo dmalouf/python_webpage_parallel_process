@@ -5,10 +5,9 @@ This was little project that was based on my need to fire-off a process that was
 
 In short:
 
-1. index.py takes index.html as a template, tweaks it a bit, and sends it to the user
-2. the user's POST goes to main.py which.
-  1. fires off makeItSo.py
+1. ```index.py``` takes ```index.html``` as a template and sends it to the user
+2. In this example, the user's POST, query-string, etc. goes to ```main.py``` which.
+  1. fires off ```backgroundTask.py```
   2. sends back to the user that all is well
-3. makeItSo.py is the 'background task' which runs even after main.py is done
+3. ```backgroundTask.py``` is the 'background task' which runs even after main.py is done sending the 'all is well' back to the browser
   1. for my need, this background task runs for about 5 minutes
-
